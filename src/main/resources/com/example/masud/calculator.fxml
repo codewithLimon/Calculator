@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="425.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.masud.CalculController">
+   <children>
+      <TextField fx:id="input" layoutX="-2.0" layoutY="-2.0" prefHeight="108.0" prefWidth="707.0" promptText="  Place Decimal Input Here">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="148.0" prefHeight="45.0" prefWidth="494.0" text="" textAlignment="CENTER" textFill="#076865">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <HBox layoutX="-2.0" layoutY="215.0" prefHeight="208.0" prefWidth="707.0">
+         <children>
+            <VBox prefHeight="270.0" prefWidth="354.0" style="-fx-background-color: red;">
+               <children>
+                  <Button fx:id="binary" minHeight="70.0" mnemonicParsing="false" onAction="#binaryButtonClicked" prefWidth="361.0" text="B">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="octal" minHeight="70.0" mnemonicParsing="false" onAction="#octalClicked" prefWidth="361.0" text="O">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exit" minHeight="70.0" mnemonicParsing="false" onAction="#exitClicked" prefWidth="361.0" text="Exit">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="298.0" prefWidth="361.0" style="-fx-background-color: green;">
+               <children>
+                  <Button fx:id="hexad" minHeight="70.0" mnemonicParsing="false" onAction="#hexaDecimalClicked" prefWidth="361.0" text="H">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="next" minHeight="70.0" mnemonicParsing="false" onAction="#NextClicked" prefWidth="361.0" text="Next Page">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="clear" minHeight="70.0" mnemonicParsing="false" onAction="#clearClicked" prefWidth="361.0" text="Clear">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
